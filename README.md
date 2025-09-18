@@ -21,3 +21,12 @@ Então valuation/valor economico, estamos pensando na empresa pensando no futuro
 
 O valor é formado por premissas
 Utilizar o invest.com para estudos
+
+Custos de Capital
+
+Modelo de CAPM -- taxax de retorno do período de Regressão
+Ke = Rf + Bj x (Rm - Rf)
+Rj = Rentabilidade da ação
+Rf = taxa de juros livre de Risco -- aplicação de renda fixa
+Rm = retorno da Carteira de Mercado
+Bj = Beta
