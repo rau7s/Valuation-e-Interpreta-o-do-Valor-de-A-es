@@ -31,7 +31,7 @@ Rf = taxa de juros livre de Risco -- aplicação de renda fixa
 Rm = retorno da Carteira de Mercado
 Bj = Beta
 
-Beta por BenchMark
+Beta por BenchMark - padrão de mercado
 calculo do beta de uma empresa c dívidas para risco economico e financeiro
 
 Bl = Bu x [1 + (P/PL) x(1-IR)]
@@ -40,3 +40,4 @@ Bu: Beta de Empresa N-Alavantadas (s/ dividas)
 P: Passivos Onerosos
 PL: Patrimonio Liquido (capital)
 IR: Alíquota de Imposto de Renda
+
