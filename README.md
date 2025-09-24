@@ -34,9 +34,9 @@
 
 O CAPM é usado para calcular a taxa de retorno exigida de uma ação, considerando risco de mercado:
 
-$$
+
 Ke = Rf + \beta_j \times (Rm - Rf)
-$$
+
 
  Ke = retorno exigido da ação (Custo de Capital Próprio)
  Rf = taxa livre de risco (ex.: rendimento de renda fixa segura)
@@ -50,9 +50,9 @@ $$
  Beta por benchmark: padrão do mercado.
  Beta alavancado (Bl): considera a empresa com dívidas (risco econômico + financeiro):
 
-$$
+
 Bl = Bu \times [1 + (P/PL) \times (1-IR)]
-$$
+
 
  Bl: Beta alavancado (empresa com dívida)
  Bu: Beta não alavancado (empresa sem dívida)
@@ -74,21 +74,21 @@ Premissas do exemplo:
 
  Custo de capital próprio alavancado:
 
-$$
+
 Ke = 7\% + 0,95 \times 9,5\% = 16\%
-$$
+
 
  Custo de capital próprio sem dívida:
 
-$$
+
 Ke = 7\% + 0,65 \times 9,5\% = 13,2\%
-$$
+
 
  Prêmio pelo risco financeiro (dívida):
 
-$$
+
 16\% - 13,2\% = 2,8\%
-$$
+
 
 > Ou seja, o risco financeiro (dívida) adiciona 2,8% ao custo do capital próprio.
 
@@ -103,75 +103,179 @@ $$
 
 ---
 
-MODELO CAPM AJUSTADO:
-Ke = 𝑹𝑭 + b x (𝑹𝒎 - 𝑹f) + 𝑹𝑰𝑺𝑪𝑶br + (𝑰𝑵𝑭br - 𝑰𝑵𝑭usa) + SP 
-
-𝑹𝑴 = Taxa de Retorno da Carteira de Mercado (benchmarking) S&P, NYSE
-𝑹𝑭 = Taxa Livre de Risco (benchmarking) - T-Bonds
-INF = Taxa de Inflação
-β = Benchmarking (empresas comparáveis) – Média Ponderada dos Betas
-SP = Size Premium
+Show, Raul 👌 Vou dar continuidade na sua estrutura organizada, numerando a partir do item 6, já que você tinha parado no 5. Fluxo de Caixa Descontado (FCD). Vou organizar as novas anotações em blocos bem claros, destacando fórmulas e observações.
 
 ---
 
-Custo de Capital de Terceiros:
-Vem da divida - é uma obrigação contratual 
+# Como interpretar uma ação e valuation
 
-O custo total de capital é a media ponderada de capital proprio e capital de terceiros
-
-Estrutura de Capital
-Sempre vamos adotar como estrurua ótima de capital, quando o WACC é o menor possível - é onde tenho chances de ter o maior valor
-
-Conseguimos pegar alguns dados do VALORDATA - q pega a SELIC, CDI, enfim - usamos p estudar
-Para pegar o beta, vamos usar o "Betas by Sector (US)" - tmb conseguimos pegar beta alavancado, beta nao alavancado, premio como risco de mercado
-
-No Institutoassaf conseguimos pegar o ibovespa, IPCA, selic, enfim
+(continuação das suas anotações)
 
 ---
 
-Métodos de Valuation - como avaliar uma empresa e chegar no valor da ação
-- Método Contábil: Mostra o valor da empresa naquele momento - reflete apenas a descontinudade da empresa, não considera oportunidade de crescimento
-tem uma dificuldade de considerar outros oportunidades/produtos
--- esse valor é uma das formas p avaliar empresa p descontinuidade
+## 6. CAPM Ajustado
 
-Valor patrimonial - Calculado c Valor do PL do Balanço da Empresa
-Valor de Liquidação/Descontinuidade - Valor de todos os bens do Balanço (-) Dívidas (Passivos)
+O CAPM tradicional pode ser ajustado para refletir fatores adicionais como risco-país, inflação e tamanho da empresa.
 
-- Método Valor de Mercado - Valor de Bolsa
-É o valor que vemos no dia a dia - 
-PL = qtd ação x cotação das ações
-limitação: Alto grau de concentração de capital do brasil
+Fórmula:
 
-- Método Multiplos 
-Avalia a empresa por um multiplo - esses variam muito -- ex. ebitda
-essencia é atribuir multiplos de empresas semelhantes
-Não considera Crescimento Futuro
-dificil encontrar emprersas comparaveis
+$$
+Ke = Rf + \beta \times (Rm - Rf) + RISCO_{br} + (INF_{br} - INF_{usa}) + SP
+$$
 
-- Método FCD - fluxo de caixa descontado
-Mais aceito e recomendado
-Considera expectativas futuras de retornos e valor presente
-valor de continuidade da empresa
-Considera tudo
+ Rm: taxa de retorno da carteira de mercado (benchmark: S\&P, NYSE)
+ Rf: taxa livre de risco (benchmark: T-Bonds)
+ INF: taxa de inflação (país vs EUA)
+ β: beta (média ponderada de empresas comparáveis)
+ SP: Size Premium (prêmio pelo porte da empresa)
 
-- Método da Stern Stewart & CO -- esse é o mais pika:
-avaliamos pela metodologia do lucro economico
+---
 
-WACC = We x Ke + Wi x Ki
-ROE = ROI + (ROI - Ki) x P/PL
-ROE = LL/PL
-EVA = NOPAT - WACC x Investimento
-EVA = (ROI - WACC) x Investimento
-EVA = LL - Ke x PL
-EVA - (ROE - Ke) x PL
-Goodwill = EVA/WACC
-Valor da empresa = Investimento + Goodwill
-ROI = NOPAT/Investimento
-ROI = ROIC = ROCE
-ROI = Margem op. x Giro do Invest
-Margem op = NOPAT/Receita
-GIro do Invest = Receita/Invest
+## 7. Custo de Capital de Terceiros e Estrutura de Capital
 
-aí o prof abriu uma DF p mostrar a stern stewart na pratica
-falou p montar uma DRE ajustada, pode ser do lado da DRE publicada mesmo
+ Custo de capital de terceiros: vem da dívida (obrigação contratual).
+ Custo total de capital (WACC): média ponderada entre capital próprio e de terceiros.
 
+Estrutura ótima de capital: é aquela em que o WACC é o menor possível, maximizando o valor da empresa.
+
+📌 Fontes de dados:
+
+ ValorData → SELIC, CDI, etc.
+ “Betas by Sector (US)” → fornece beta alavancado/não alavancado e prêmio de risco de mercado.
+ Instituto Assaf → dados de Ibovespa, IPCA, Selic.
+
+---
+
+## 8. Métodos de Valuation
+
+### 8.1 Método Contábil
+
+ Mostra o valor da empresa naquele momento.
+ Reflete apenas descontinuidade, não considera oportunidades de crescimento.
+
+Tipos:
+
+ Valor Patrimonial: valor do PL do balanço.
+ Valor de Liquidação: ativos – passivos (se a empresa encerrasse hoje).
+
+---
+
+### 8.2 Método de Valor de Mercado
+
+ Valor visto no dia a dia na bolsa.
+ Fórmula:
+
+  
+  Valor = \text{Nº de ações} \times \text{Cotação}
+  
+ Limitação: no Brasil há alta concentração de capital → pode distorcer o valor.
+
+---
+
+### 8.3 Método de Múltiplos
+
+ Avalia a empresa por múltiplos (ex.: EV/EBITDA, P/L etc.).
+ Baseia-se em comparação com empresas semelhantes.
+ Limitações:
+
+   Não considera crescimento futuro.
+   Difícil encontrar empresas realmente comparáveis.
+
+---
+
+### 8.4 Método do Fluxo de Caixa Descontado (FCD)
+
+ O mais aceito e recomendado.
+ Considera expectativas futuras de caixa, trazendo a valor presente.
+ Inclui valor de continuidade da empresa.
+ Abrange todos os aspectos (crescimento, risco, retorno).
+
+---
+
+### 8.5 Método da Stern Stewart & Co (Lucro Econômico / EVA)
+
+Considerado um dos mais completos. Avalia o lucro econômico da empresa.
+
+#### Principais fórmulas:
+
+ WACC:
+
+
+WACC = We \times Ke + Wi \times Ki
+
+
+ ROE:
+
+
+ROE = ROI + (ROI - Ki) \times \frac{P}{PL}
+
+
+
+ROE = \frac{LL}{PL}
+
+
+ EVA (Economic Value Added):
+
+
+EVA = NOPAT - WACC \times Investimento
+
+
+
+EVA = (ROI - WACC) \times Investimento
+
+
+
+EVA = LL - Ke \times PL
+
+
+
+EVA = (ROE - Ke) \times PL
+
+
+ Goodwill:
+
+
+Goodwill = \frac{EVA}{WACC}
+
+
+ Valor da Empresa:
+
+
+Valor = Investimento + Goodwill
+
+
+ ROI (ou ROIC/ROCE):
+
+
+ROI = \frac{NOPAT}{Investimento}
+
+
+
+ROI = \text{Margem Operacional} \times \text{Giro do Investimento}
+
+
+ Margem operacional:
+
+
+\frac{NOPAT}{Receita}
+
+
+ Giro do investimento:
+
+
+\frac{Receita}{Investimento}
+
+
+---
+
+### 8.6 Estrutura prática (DF e DRE ajustada)
+
+ Receita operacional líquida – Custo das vendas = Lucro Bruto
+ Lucro Bruto – Despesas operacionais líquidas = Lucro antes do resultado financeiro
+ EBITDA: Lucro antes do resultado financeiro + Depreciação
+ EBT: Lucro antes do resultado financeiro – Depreciação
+ NOPAT restrito: EBIT – IR e CSLL (só da atividade principal)
+ NOPAT amplo: NOPAT restrito + Receita financeira – IR/CSLL
+ Lucro líquido: NOPAT amplo – Despesas financeiras + Benefício fiscal (IR das despesas financeiras)
+
+---
