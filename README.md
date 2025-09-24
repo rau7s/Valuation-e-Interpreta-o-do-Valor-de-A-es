@@ -102,7 +102,3 @@ $$
 > A lógica: dinheiro no futuro vale menos hoje, por isso se desconta pelo custo de capital (Ke).
 
 ---
-
-Se você quiser, eu posso transformar isso em um quadro resumido com fórmulas, conceitos e exemplos, tipo um “mapa mental de valuation”, que fica ótimo para revisão rápida e projeto futuro.
-
-Quer que eu faça isso?
