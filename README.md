@@ -27,17 +27,8 @@
  Plataformas para estudo de ações: Invest.com
 
 ---
-Show, Raul 👌 Vou dar continuidade na sua estrutura organizada, numerando a partir do item 6, já que você tinha parado no **5. Fluxo de Caixa Descontado (FCD)**. Vou organizar as novas anotações em blocos bem claros, destacando fórmulas e observações.
 
----
-
-# **Como interpretar uma ação e valuation**
-
-*(continuação das suas anotações)*
-
----
-
-## **6. CAPM Ajustado**
+## **4. CAPM Ajustado**
 
 O CAPM tradicional pode ser **ajustado** para refletir fatores adicionais como risco-país, inflação e tamanho da empresa.
 
@@ -55,7 +46,7 @@ $$
 
 ---
 
-## **7. Custo de Capital de Terceiros e Estrutura de Capital**
+## **5. Custo de Capital de Terceiros e Estrutura de Capital**
 
 * **Custo de capital de terceiros:** vem da dívida (obrigação contratual).
 * **Custo total de capital (WACC):** média ponderada entre capital próprio e de terceiros.
@@ -70,44 +61,9 @@ $$
 
 ---
 
-## **8. Métodos de Valuation**
+## **6. Métodos de Valuation**
 
-### **8.1 Método Contábil**
-
-* Mostra o valor da empresa **naquele momento**.
-* Reflete apenas **descontinuidade**, não considera oportunidades de crescimento.
-
-**Tipos:**
-
-* **Valor Patrimonial:** valor do PL do balanço.
-* **Valor de Liquidação:** ativos – passivos (se a empresa encerrasse hoje).
-
----
-
-### **8.2 Método de Valor de Mercado**
-
-* Valor visto no dia a dia na bolsa.
-* Fórmula:
-
-  $$
-  Valor = \text{Nº de ações} \times \text{Cotação}
-  $$
-* Limitação: no Brasil há alta concentração de capital → pode distorcer o valor.
-
----
-
-### **8.3 Método de Múltiplos**
-
-* Avalia a empresa por múltiplos (ex.: **EV/EBITDA**, P/L etc.).
-* Baseia-se em comparação com empresas semelhantes.
-* Limitações:
-
-  * Não considera crescimento futuro.
-  * Difícil encontrar empresas realmente comparáveis.
-
----
-
-### **8.4 Método do Fluxo de Caixa Descontado (FCD)**
+### **6.1 Método do Fluxo de Caixa Descontado (FCD)**
 
 * O mais aceito e recomendado.
 * Considera expectativas futuras de caixa, trazendo a valor presente.
@@ -116,7 +72,7 @@ $$
 
 ---
 
-### **8.5 Método da Stern Stewart & Co (Lucro Econômico / EVA)**
+### **6.2 Método da Stern Stewart & Co (Lucro Econômico / EVA)**
 
 Considerado um dos mais completos. Avalia o **lucro econômico** da empresa.
 
@@ -191,29 +147,126 @@ $$
 $$
 
 ---
+### **6.3 Estrutura prática (DF e DRE ajustada)**
 
-### **8.6 Estrutura prática (DF e DRE ajustada)** - aqui estamos vendo na pratica como fazer as contas com uma df emitida pelo cliente
+Aqui estamos vendo **na prática** como aplicar os conceitos de valuation com base em uma **demonstração financeira emitida pelo cliente**.
+
+#### **6.3.1 Construção da DRE Ajustada**
 
 * Receita operacional líquida – Custo das vendas = **Lucro Bruto**
 * Lucro Bruto – Despesas operacionais líquidas = **Lucro antes do resultado financeiro**
-* **EBITDA:** Lucro antes do resultado financeiro + Depreciação
-* **EBT:** Lucro antes do resultado financeiro – Depreciação
-* **NOPAT restrito:** EBIT – IR e CSLL (só da atividade principal)
-* **NOPAT amplo:** NOPAT restrito + Receita financeira – IR/CSLL
-* **Lucro líquido:** NOPAT amplo – Despesas financeiras + Benefício fiscal (IR das despesas financeiras)
+* **EBITDA = Lucro antes do resultado financeiro + Depreciação**
+* **EBT = Lucro antes do resultado financeiro – Depreciação**
+* **NOPAT restrito = EBIT – IR e CSLL** (foco na atividade principal)
+* **NOPAT amplo = NOPAT restrito + Receita financeira – IR/CSLL**
+* **Lucro líquido = NOPAT amplo – Despesas financeiras + Benefício fiscal (IR das despesas financeiras)**
 
-Tambem é legar a gente criar uma nova coluna e fazer uma média
-comparando o valor anterior e atual
+📌 **Dica prática:** criar uma nova coluna na planilha para comparar **valor anterior x valor atual**, e calcular a **média**.
 
-criamos uma area de investimento com
-Capital de Terceiros (emprestimos e financiamentos) + capital proprio (PL) = Total do investimento
+---
 
-Calculo dos indicadores de desempenho
-ROI = NOPAT/Investimento
-ROE = Lucro Liq/PL
+#### **6.3.2 Área de Investimento**
 
-Custos de Capital: Despesas Financ - (-) Beneficio fiscal = Desp. Financ. Liq. IR  
-KI Líq do IR = Desp. Financ. Liq. IR / Capital de Terceiros
+O investimento total é formado por:
 
-Pesos Contábeis:
-Beta Alavancado = BU x [1 + P/PL x (1 - IR)]
+$$
+\text{Investimento Total} = \text{Capital de Terceiros (dívidas)} + \text{Capital Próprio (PL)}
+$$
+
+---
+
+#### **6.3.3 Indicadores de Desempenho**
+
+* **ROI (Retorno sobre Investimento):**
+
+$$
+ROI = \frac{NOPAT}{Investimento}
+$$
+
+* **ROE (Retorno sobre Patrimônio Líquido):**
+
+$$
+ROE = \frac{Lucro Líquido}{PL}
+$$
+
+---
+
+#### **6.3.4 Custos de Capital**
+
+* **Despesas financeiras líquidas de IR:**
+
+$$
+\text{Desp. Financ. Líq. IR} = \text{Desp. Financ.} - \text{Benefício Fiscal}
+$$
+
+* **Ki Líq. IR (Custo de Capital de Terceiros):**
+
+$$
+Ki = \frac{\text{Desp. Financ. Líq. IR}}{\text{Capital de Terceiros}}
+$$
+
+* **Ke (Custo de Capital Próprio):**
+
+$$
+Ke = Rf + \beta_{alavancado} \cdot (Rm - Rf) + (INF_{BRA} - INF_{USA})
+$$
+
+---
+
+#### **6.3.5 Pesos Contábeis (Estrutura de Capital)**
+
+* **Peso do capital de terceiros:**
+
+$$
+Wi = \frac{\text{Capital de Terceiros}}{\text{Total do Investimento}}
+$$
+
+* **Peso do capital próprio:**
+
+$$
+We = \frac{\text{Capital Próprio}}{\text{Total do Investimento}}
+$$
+
+---
+
+#### **6.3.6 Beta Alavancado**
+
+$$
+\beta_{alavancado} = \beta_u \times \left[1 + \frac{P}{PL} \times (1 - IR)\right]
+$$
+
+* **P:** Passivos onerosos (dívidas)
+* **PL:** Patrimônio líquido
+* **IR:** Alíquota de imposto de renda
+
+---
+
+#### **6.3.7 WACC (Custo Médio Ponderado de Capital)**
+
+$$
+WACC = Wi \cdot Ki + We \cdot Ke
+$$
+
+* **Wi:** peso do capital de terceiros
+* **Ki:** custo do capital de terceiros líquido de IR
+* **We:** peso do capital próprio
+* **Ke:** custo do capital próprio
+
+---
+
+📌 **Fontes de dados**:
+
+* **Risk Free:** T-Bond (1928–2024)
+* **Rm (Retorno de Mercado):** S\&P (1928–2024)
+* **Risco Brasil, Inflação BRA (IPCA), Inflação USA (CPI):** Instituto Assaf
+
+---
+
+continuando vendo o mesmo assunto:
+
+Avaliação pelo Lucro Econômico, temos 4 formas:
+LE = MOPAR - WACC x Investimento
+LE = (ROI - WACC) x Investimento
+LE = LL - Ke x PL
+LE = (ROE - Ke) x PL
+
