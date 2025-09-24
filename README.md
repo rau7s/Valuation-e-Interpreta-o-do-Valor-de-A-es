@@ -192,7 +192,7 @@ $$
 
 ---
 
-### **8.6 Estrutura prática (DF e DRE ajustada)**
+### **8.6 Estrutura prática (DF e DRE ajustada)** - aqui estamos vendo na pratica como fazer as contas com uma df emitida pelo cliente
 
 * Receita operacional líquida – Custo das vendas = **Lucro Bruto**
 * Lucro Bruto – Despesas operacionais líquidas = **Lucro antes do resultado financeiro**
@@ -202,4 +202,18 @@ $$
 * **NOPAT amplo:** NOPAT restrito + Receita financeira – IR/CSLL
 * **Lucro líquido:** NOPAT amplo – Despesas financeiras + Benefício fiscal (IR das despesas financeiras)
 
----
+Tambem é legar a gente criar uma nova coluna e fazer uma média
+comparando o valor anterior e atual
+
+criamos uma area de investimento com
+Capital de Terceiros (emprestimos e financiamentos) + capital proprio (PL) = Total do investimento
+
+Calculo dos indicadores de desempenho
+ROI = NOPAT/Investimento
+ROE = Lucro Liq/PL
+
+Custos de Capital: Despesas Financ - (-) Beneficio fiscal = Desp. Financ. Liq. IR  
+KI Líq do IR = Desp. Financ. Liq. IR / Capital de Terceiros
+
+Pesos Contábeis:
+Beta Alavancado = BU x [1 + P/PL x (1 - IR)]
