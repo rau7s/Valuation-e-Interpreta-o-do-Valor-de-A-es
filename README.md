@@ -102,3 +102,76 @@ $$
 > A lógica: dinheiro no futuro vale menos hoje, por isso se desconta pelo custo de capital (Ke).
 
 ---
+
+MODELO CAPM AJUSTADO:
+Ke = 𝑹𝑭 + b x (𝑹𝒎 - 𝑹f) + 𝑹𝑰𝑺𝑪𝑶br + (𝑰𝑵𝑭br - 𝑰𝑵𝑭usa) + SP 
+
+𝑹𝑴 = Taxa de Retorno da Carteira de Mercado (benchmarking) S&P, NYSE
+𝑹𝑭 = Taxa Livre de Risco (benchmarking) - T-Bonds
+INF = Taxa de Inflação
+β = Benchmarking (empresas comparáveis) – Média Ponderada dos Betas
+SP = Size Premium
+
+---
+
+Custo de Capital de Terceiros:
+Vem da divida - é uma obrigação contratual 
+
+O custo total de capital é a media ponderada de capital proprio e capital de terceiros
+
+Estrutura de Capital
+Sempre vamos adotar como estrurua ótima de capital, quando o WACC é o menor possível - é onde tenho chances de ter o maior valor
+
+Conseguimos pegar alguns dados do VALORDATA - q pega a SELIC, CDI, enfim - usamos p estudar
+Para pegar o beta, vamos usar o "Betas by Sector (US)" - tmb conseguimos pegar beta alavancado, beta nao alavancado, premio como risco de mercado
+
+No Institutoassaf conseguimos pegar o ibovespa, IPCA, selic, enfim
+
+---
+
+Métodos de Valuation - como avaliar uma empresa e chegar no valor da ação
+- Método Contábil: Mostra o valor da empresa naquele momento - reflete apenas a descontinudade da empresa, não considera oportunidade de crescimento
+tem uma dificuldade de considerar outros oportunidades/produtos
+-- esse valor é uma das formas p avaliar empresa p descontinuidade
+
+Valor patrimonial - Calculado c Valor do PL do Balanço da Empresa
+Valor de Liquidação/Descontinuidade - Valor de todos os bens do Balanço (-) Dívidas (Passivos)
+
+- Método Valor de Mercado - Valor de Bolsa
+É o valor que vemos no dia a dia - 
+PL = qtd ação x cotação das ações
+limitação: Alto grau de concentração de capital do brasil
+
+- Método Multiplos 
+Avalia a empresa por um multiplo - esses variam muito -- ex. ebitda
+essencia é atribuir multiplos de empresas semelhantes
+Não considera Crescimento Futuro
+dificil encontrar emprersas comparaveis
+
+- Método FCD - fluxo de caixa descontado
+Mais aceito e recomendado
+Considera expectativas futuras de retornos e valor presente
+valor de continuidade da empresa
+Considera tudo
+
+- Método da Stern Stewart & CO -- esse é o mais pika:
+avaliamos pela metodologia do lucro economico
+
+WACC = We x Ke + Wi x Ki
+ROE = ROI + (ROI - Ki) x P/PL
+ROE = LL/PL
+EVA = NOPAT - WACC x Investimento
+EVA = (ROI - WACC) x Investimento
+EVA = LL - Ke x PL
+EVA - (ROE - Ke) x PL
+Goodwill = EVA/WACC
+Valor da empresa = Investimento + Goodwill
+ROI = NOPAT/Investimento
+ROI = ROIC = ROCE
+ROI = Margem op. x Giro do Invest
+Margem op = NOPAT/Receita
+GIro do Invest = Receita/Invest
+
+aí o prof abriu uma DF p mostrar a stern stewart na pratica
+falou p montar uma DRE ajustada, pode ser do lado da DRE publicada mesmo
+
