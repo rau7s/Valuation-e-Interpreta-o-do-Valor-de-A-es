@@ -1,272 +1,210 @@
-# Como interpretar uma ação e valuation
-
-## 1. Conceitos básicos
-
- Preço da ação: é o valor da última transação no mercado, ou seja, quanto você pagaria hoje para comprar a ação.
- Valor da ação: é o valor intrínseco, calculado com base nos benefícios futuros de caixa que a empresa deve gerar.
- Investimento: é considerado bom quando o valor estimado do ativo > preço atual no mercado.
-
-   Ex.: Se você espera que a ação valha R\$ 50, mas está sendo negociada a R\$ 40, ela pode ser uma oportunidade de compra.
- Pensamento de longo prazo: compra-se pensando nos dividendos e na valorização futura.
+# **Como interpretar uma ação e valuation**
 
 ---
 
-## 2. Conceitos financeiros importantes
+## **1. Conceitos básicos**
 
- Goodwill: representa a riqueza gerada pela empresa além do capital investido, ou seja, quanto a empresa vale mais do que o que foi aportado.
- Patrimônio líquido: reflete o passado da empresa; não é o valor de mercado atual ou futuro.
- Ativos: não necessariamente refletem valor; o que importa para valuation é o valor econômico futuro, baseado em premissas.
+* **Preço da ação**: valor da última transação no mercado.
+* **Valor da ação**: valor intrínseco, baseado nos fluxos de caixa futuros.
+* **Investimento atrativo**: quando **Valor > Preço**.
 
-> Resumo: o valuation é futuro, enquanto patrimônio/ativos refletem o passado.
+  * Ex.: Valor esperado = R\$50, Preço atual = R\$40 → oportunidade de compra.
+* **Visão de longo prazo**: foco em dividendos + valorização futura.
 
 ---
 
-## 3. Fontes de estudo e pesquisa
+## **2. Conceitos financeiros importantes**
 
- Listas de empresas unicórnio: The Complete List of Unicorn Companies
- Plataformas para estudo de ações: Invest.com
+* **Goodwill**: riqueza além do capital investido.
+* **Patrimônio líquido (PL)**: reflete o passado da empresa, não o valor de mercado.
+* **Ativos**: não são garantia de valor; o que importa é o fluxo futuro.
+
+📌 Resumo:
+**Valuation = futuro**
+**Patrimônio/Ativos = passado**
+
+---
+
+## **3. Fontes de estudo e pesquisa**
+
+* **The Complete List of Unicorn Companies** → benchmarking.
+* **Invest.com** → estudo de ações.
 
 ---
 
 ## **4. CAPM Ajustado**
 
-O CAPM tradicional pode ser **ajustado** para refletir fatores adicionais como risco-país, inflação e tamanho da empresa.
-
-**Fórmula:**
+O CAPM tradicional pode ser **ajustado** com risco-país, inflação e porte da empresa.
 
 $$
-Ke = Rf + \beta \times (Rm - Rf) + RISCO_{br} + (INF_{br} - INF_{usa}) + SP
+Ke = Rf + \beta \cdot (Rm - Rf) + Risco_{BR} + (INF_{BR} - INF_{USA}) + SP
 $$
 
-* **Rm:** taxa de retorno da carteira de mercado (*benchmark*: S\&P, NYSE)
-* **Rf:** taxa livre de risco (*benchmark*: T-Bonds)
-* **INF:** taxa de inflação (país vs EUA)
-* **β:** beta (média ponderada de empresas comparáveis)
-* **SP:** Size Premium (prêmio pelo porte da empresa)
+* **Rf:** taxa livre de risco (T-Bonds).
+* **Rm:** retorno de mercado (S\&P, NYSE).
+* **β:** beta (comparáveis).
+* **SP:** Size Premium (prêmio por porte).
+* **Inflação BRA vs USA:** prêmio adicional.
 
 ---
 
-## **5. Custo de Capital de Terceiros e Estrutura de Capital**
+## **5. Custo de Capital e Estrutura**
 
-* **Custo de capital de terceiros:** vem da dívida (obrigação contratual).
-* **Custo total de capital (WACC):** média ponderada entre capital próprio e de terceiros.
+* **Custo de capital de terceiros (Ki):** vem da dívida.
+* **Custo médio de capital (WACC):** mistura capital próprio + terceiros.
+* **Estrutura ótima:** quando o **WACC é mínimo**.
 
-**Estrutura ótima de capital:** é aquela em que o **WACC é o menor possível**, maximizando o valor da empresa.
+📌 **Fontes práticas**:
 
-📌 **Fontes de dados**:
-
-* **ValorData** → SELIC, CDI, etc.
-* **“Betas by Sector (US)”** → fornece beta alavancado/não alavancado e prêmio de risco de mercado.
-* **Instituto Assaf** → dados de Ibovespa, IPCA, Selic.
+* ValorData (SELIC, CDI).
+* Betas por setor (EUA).
+* Instituto Assaf (Ibovespa, IPCA, Selic).
 
 ---
 
 ## **6. Métodos de Valuation**
 
-### **6.1 Método do Fluxo de Caixa Descontado (FCD)**
+### **6.1 Fluxo de Caixa Descontado (FCD)**
 
-* O mais aceito e recomendado.
-* Considera expectativas futuras de caixa, trazendo a valor presente.
-* Inclui valor de continuidade da empresa.
-* Abrange todos os aspectos (crescimento, risco, retorno).
+* O mais usado e aceito.
+* Traz expectativas futuras de caixa a valor presente.
+* Inclui valor de continuidade.
 
 ---
 
-### **6.2 Método da Stern Stewart & Co (Lucro Econômico / EVA)**
+### **6.2 Stern Stewart (Lucro Econômico / EVA)**
 
-Considerado um dos mais completos. Avalia o **lucro econômico** da empresa.
+Base: medir **lucro econômico**.
 
-#### **Principais fórmulas:**
+**Principais fórmulas**
 
-* **WACC:**
-
-$$
-WACC = We \times Ke + Wi \times Ki
-$$
-
-* **ROE:**
+* **WACC**
 
 $$
-ROE = ROI + (ROI - Ki) \times \frac{P}{PL}
+WACC = We \cdot Ke + Wi \cdot Ki
 $$
 
-$$
-ROE = \frac{LL}{PL}
-$$
-
-* **EVA (Economic Value Added):**
+* **ROE**
 
 $$
-EVA = NOPAT - WACC \times Investimento
+ROE = \frac{LL}{PL} = ROI + (ROI - Ki) \cdot \frac{P}{PL}
+$$
+
+* **EVA**
+
+$$
+EVA = (ROI - WACC) \cdot Investimento
 $$
 
 $$
-EVA = (ROI - WACC) \times Investimento
+EVA = (ROE - Ke) \cdot PL
 $$
 
-$$
-EVA = LL - Ke \times PL
-$$
-
-$$
-EVA = (ROE - Ke) \times PL
-$$
-
-* **Goodwill:**
+* **Goodwill (MVA)**
 
 $$
 Goodwill = \frac{EVA}{WACC}
 $$
 
-* **Valor da Empresa:**
+* **Valor da empresa**
 
 $$
 Valor = Investimento + Goodwill
 $$
 
-* **ROI (ou ROIC/ROCE):**
-
-$$
-ROI = \frac{NOPAT}{Investimento}
-$$
-
-$$
-ROI = \text{Margem Operacional} \times \text{Giro do Investimento}
-$$
-
-* Margem operacional:
-
-$$
-\frac{NOPAT}{Receita}
-$$
-
-* Giro do investimento:
-
-$$
-\frac{Receita}{Investimento}
-$$
-
 ---
+
 ### **6.3 Estrutura prática (DF e DRE ajustada)**
 
-Aqui estamos vendo **na prática** como aplicar os conceitos de valuation com base em uma **demonstração financeira emitida pelo cliente**.
+#### **6.3.1 DRE Ajustada**
 
-#### **6.3.1 Construção da DRE Ajustada**
-
-* Receita operacional líquida – Custo das vendas = **Lucro Bruto**
-* Lucro Bruto – Despesas operacionais líquidas = **Lucro antes do resultado financeiro**
-* **EBITDA = Lucro antes do resultado financeiro + Depreciação**
-* **EBT = Lucro antes do resultado financeiro – Depreciação**
-* **NOPAT restrito = EBIT – IR e CSLL** (foco na atividade principal)
+* Receita líquida – Custo vendas = **Lucro Bruto**
+* Lucro Bruto – Despesas operacionais = **EBIT**
+* **EBITDA = EBIT + Depreciação**
+* **EBT = EBIT – Depreciação**
+* **NOPAT restrito = EBIT – IR/CSLL**
 * **NOPAT amplo = NOPAT restrito + Receita financeira – IR/CSLL**
-* **Lucro líquido = NOPAT amplo – Despesas financeiras + Benefício fiscal (IR das despesas financeiras)**
+* **Lucro líquido = NOPAT amplo – Despesas financeiras + Benefício fiscal**
 
-📌 **Dica prática:** criar uma nova coluna na planilha para comparar **valor anterior x valor atual**, e calcular a **média**.
+📌 Criar coluna com **comparativo anterior x atual** e calcular **médias**.
 
 ---
 
 #### **6.3.2 Área de Investimento**
 
-O investimento total é formado por:
-
 $$
-\text{Investimento Total} = \text{Capital de Terceiros (dívidas)} + \text{Capital Próprio (PL)}
+Investimento = Capital de Terceiros + PL
 $$
 
 ---
 
-#### **6.3.3 Indicadores de Desempenho**
+#### **6.3.3 Indicadores**
 
-* **ROI (Retorno sobre Investimento):**
-
-$$
-ROI = \frac{NOPAT}{Investimento}
-$$
-
-* **ROE (Retorno sobre Patrimônio Líquido):**
-
-$$
-ROE = \frac{Lucro Líquido}{PL}
-$$
+* **ROI = NOPAT / Investimento**
+* **ROE = Lucro Líquido / PL**
 
 ---
 
 #### **6.3.4 Custos de Capital**
 
-* **Despesas financeiras líquidas de IR:**
-
-$$
-\text{Desp. Financ. Líq. IR} = \text{Desp. Financ.} - \text{Benefício Fiscal}
-$$
-
-* **Ki Líq. IR (Custo de Capital de Terceiros):**
-
-$$
-Ki = \frac{\text{Desp. Financ. Líq. IR}}{\text{Capital de Terceiros}}
-$$
-
-* **Ke (Custo de Capital Próprio):**
-
-$$
-Ke = Rf + \beta_{alavancado} \cdot (Rm - Rf) + (INF_{BRA} - INF_{USA})
-$$
+* Despesa financeira líquida de IR = Despesa bruta – Benefício fiscal.
+* **Ki = Desp. Financ. Líq. IR / Capital de Terceiros**
+* **Ke = Rf + \beta\_{alav} (Rm - Rf) + (Inf BRA - Inf USA)**
 
 ---
 
-#### **6.3.5 Pesos Contábeis (Estrutura de Capital)**
+#### **6.3.5 Estrutura de Capital**
 
-* **Peso do capital de terceiros:**
-
-$$
-Wi = \frac{\text{Capital de Terceiros}}{\text{Total do Investimento}}
-$$
-
-* **Peso do capital próprio:**
-
-$$
-We = \frac{\text{Capital Próprio}}{\text{Total do Investimento}}
-$$
+* **Wi = Capital de Terceiros / Investimento Total**
+* **We = PL / Investimento Total**
 
 ---
 
 #### **6.3.6 Beta Alavancado**
 
 $$
-\beta_{alavancado} = \beta_u \times \left[1 + \frac{P}{PL} \times (1 - IR)\right]
+\beta_{alav} = \beta_u \times \Big[1 + \frac{P}{PL} \cdot (1 - IR)\Big]
 $$
-
-* **P:** Passivos onerosos (dívidas)
-* **PL:** Patrimônio líquido
-* **IR:** Alíquota de imposto de renda
 
 ---
 
-#### **6.3.7 WACC (Custo Médio Ponderado de Capital)**
+#### **6.3.7 WACC**
 
 $$
 WACC = Wi \cdot Ki + We \cdot Ke
 $$
 
-* **Wi:** peso do capital de terceiros
-* **Ki:** custo do capital de terceiros líquido de IR
-* **We:** peso do capital próprio
-* **Ke:** custo do capital próprio
+---
+
+📌 **Fontes**: T-Bond, S\&P, Instituto Assaf (Risco BR, IPCA, CPI).
 
 ---
 
-📌 **Fontes de dados**:
+### **6.4 Avaliação pelo Lucro Econômico**
 
-* **Risk Free:** T-Bond (1928–2024)
-* **Rm (Retorno de Mercado):** S\&P (1928–2024)
-* **Risco Brasil, Inflação BRA (IPCA), Inflação USA (CPI):** Instituto Assaf
+Quatro formas equivalentes:
+
+* $LE = MOPAR - WACC \cdot Investimento$
+* $LE = (ROI - WACC) \cdot Investimento$
+* $LE = LL - Ke \cdot PL$
+* $LE = (ROE - Ke) \cdot PL$
+
+Depois:
+
+* **Goodwill (MVA):** $Goodwill = \frac{LE}{WACC}$
+* **Valor da Empresa = Goodwill + Investimento**
+* **Valor do PL = Valor da Empresa – Dívida**
+* **Valor por ação = Valor do PL / nº ações**
 
 ---
 
-continuando vendo o mesmo assunto:
+### **6.5 Análise de Sensibilidade**
 
-Avaliação pelo Lucro Econômico, temos 4 formas:
-LE = MOPAR - WACC x Investimento
-LE = (ROI - WACC) x Investimento
-LE = LL - Ke x PL
-LE = (ROE - Ke) x PL
+* Beta não alavancado como base.
+* Cenários:
 
+  * **Otimista:** 0,8
+  * **Mais provável:** 1,0
+  * **Pessimista:** 1,1
+
+---
