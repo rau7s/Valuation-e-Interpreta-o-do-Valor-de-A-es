@@ -79,3 +79,25 @@ new trader -> 3 months on backtest -> then become experience trader -> FW test -
 (trade on demo acc or small real account) -- FTMO free trial have this
 
 4 - Market Structure Rules
+
+4.1. why Market structure (MSI) is importante?
+
+4.2.how to define
+Pullback : 
+At least 2 reversal candles continuously.
+
+ The first candle isn’t “range” pinbar / doji candle.
+(Only care 1st time market pullback -> Valid )
+
+Break-out :
+At least 2 candles closed out of range.
+They aren’t pinbar / doji candle
+
+
+* Normal mistake :
+Pullback : Range 
+Break out : False break-out
+
+4.3.tips
+
+4.4.examples
